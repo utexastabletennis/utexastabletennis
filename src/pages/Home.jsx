@@ -55,28 +55,35 @@ function Home() {
         </div>
 
         {/* Join Us Section */}
-        <div className="bg-ut-orange text-white rounded-lg p-8 text-center">
-          <h2 className="text-3xl font-bold mb-4">Join Our Community</h2>
-          <p className="text-xl mb-6">
-            Follow us on social media and join our Discord to stay updated
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://www.instagram.com/texas_tabletennis/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white text-ut-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Follow on Instagram
-            </a>
-            <a
-              href="https://discord.gg/uvnz3g2aaj"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
-            >
-              Join Discord
-            </a>
+        <div className="relative rounded-lg overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: 'url(/team-photo.jpg)' }}
+          ></div>
+          <div className="absolute inset-0 bg-ut-orange bg-opacity-90"></div>
+          <div className="relative text-white p-8 text-center">
+            <h2 className="text-3xl font-bold mb-4">Join Our Community</h2>
+            <p className="text-xl mb-6">
+              Follow us on social media and join our Discord to stay updated
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://www.instagram.com/texas_tabletennis/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-ut-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              >
+                Follow on Instagram
+              </a>
+              <a
+                href="https://discord.gg/uvnz3g2aaj"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
+              >
+                Join Discord
+              </a>
+            </div>
           </div>
         </div>
       </div>

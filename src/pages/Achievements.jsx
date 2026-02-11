@@ -44,9 +44,14 @@ function Achievements() {
 
   return (
     <div>
-      {/* Hero Section with solid gradient */}
-      <div className="bg-gradient-to-r from-ut-orange to-orange-600 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Hero Section with team photo background */}
+      <div className="relative py-20 bg-gray-900">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: 'url(/team-photo.jpg)' }}
+        ></div>
+        <div className="absolute inset-0 bg-ut-orange bg-opacity-60"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl font-bold text-white mb-4">Achievements</h1>
           <p className="text-xl text-white">Our competitive success in NCTTA tournaments</p>
         </div>
@@ -78,15 +83,22 @@ function Achievements() {
         </div>
 
         {/* Legacy Statistics */}
-        <div className="bg-gradient-to-r from-ut-orange to-orange-600 rounded-lg p-8 text-white">
-          <h2 className="text-3xl font-bold text-center mb-8">Our Legacy</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {legacyStats.map((stat, idx) => (
-              <div key={idx} className="text-center">
-                <div className="text-4xl font-bold mb-2">{stat.value}</div>
-                <div className="text-lg">{stat.label}</div>
-              </div>
-            ))}
+        <div className="relative rounded-lg overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: 'url(/team-photo.jpg)' }}
+          ></div>
+          <div className="absolute inset-0 bg-ut-orange bg-opacity-90"></div>
+          <div className="relative p-8 text-white">
+            <h2 className="text-3xl font-bold text-center mb-8">Our Legacy</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {legacyStats.map((stat, idx) => (
+                <div key={idx} className="text-center">
+                  <div className="text-4xl font-bold mb-2">{stat.value}</div>
+                  <div className="text-lg">{stat.label}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
