@@ -1,20 +1,36 @@
 function Achievements() {
   const achievements = [
     {
-      tournament: "2024 NCTTA Fall Regionals",
-      date: "November 2024",
+      tournament: "2025-26 Texas Divisionals",
+      date: "2025-26",
       results: [
-        { event: "Team Event", placement: "2nd Place", color: "text-gray-500" },
-        { event: "Women's Singles", placement: "1st Place", color: "text-yellow-500", medal: "🥇" },
-        { event: "Co-ed Doubles", placement: "3rd Place", color: "text-amber-700", medal: "🥉" },
+        { event: "Co-ed Teams", placement: "1st Place", player: "", color: "text-yellow-500", medal: "🥇" },
+        { event: "Men's Singles", placement: "2nd Place", player: "Michael Guo", color: "text-gray-500", medal: "🥈" },
+        { event: "Women's Singles", placement: "1st Place", player: "Fan Miao", color: "text-yellow-500", medal: "🥇" },
       ]
     },
     {
-      tournament: "2024 NCTTA Fall Tournament",
-      date: "October 2024",
+      tournament: "2024-25 Nationals",
+      date: "2024-25",
       results: [
-        { event: "Team Event", placement: "3rd Place", color: "text-amber-700", medal: "🥉" },
-        { event: "Men's Singles", placement: "2nd Place", color: "text-gray-500", medal: "🥈" },
+        { event: "Men's Singles", placement: "Competed", player: "Emery He", color: "text-ut-orange", medal: "🏅" },
+      ]
+    },
+    {
+      tournament: "2024-25 South Regionals",
+      date: "2024-25",
+      results: [
+        { event: "Co-ed Teams", placement: "Wildcard", player: "", color: "text-ut-orange", medal: "🎫" },
+        { event: "Men's Singles", placement: "Competed", player: "Emery He", color: "text-ut-orange", medal: "🏅" },
+      ]
+    },
+    {
+      tournament: "2021-22 South Regionals",
+      date: "2021-22",
+      results: [
+        { event: "Co-ed Teams", placement: "2nd Place", player: "", color: "text-gray-500", medal: "🥈" },
+        { event: "Women's Teams", placement: "2nd Place", player: "", color: "text-gray-500", medal: "🥈" },
+        { event: "Women's Singles", placement: "3rd Place", player: "Eden Qi", color: "text-amber-700", medal: "🥉" },
       ]
     }
   ]
@@ -51,6 +67,9 @@ function Achievements() {
                     <div className="text-4xl mb-2">{result.medal || "🏅"}</div>
                     <h3 className="text-xl font-bold text-gray-900 mb-2">{result.event}</h3>
                     <p className={`text-2xl font-bold ${result.color}`}>{result.placement}</p>
+                    {result.player && (
+                      <p className="text-sm text-gray-600 mt-2">{result.player}</p>
+                    )}
                   </div>
                 ))}
               </div>
