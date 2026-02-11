@@ -5,7 +5,7 @@ function Home() {
       <div className="relative h-96 bg-gray-900">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/team-photo.jpg)' }}
+          style={{ backgroundImage: 'url(/utexastabletennis/team-photo.jpg)' }}
         ></div>
         <div className="absolute inset-0 bg-ut-orange bg-opacity-60"></div>
         <div className="relative h-full flex items-center justify-center text-center px-4">
@@ -58,7 +58,7 @@ function Home() {
         <div className="relative rounded-lg overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: 'url(/team-photo.jpg)' }}
+            style={{ backgroundImage: 'url(/utexastabletennis/team-photo.jpg)' }}
           ></div>
           <div className="absolute inset-0 bg-ut-orange bg-opacity-90"></div>
           <div className="relative text-white p-8 text-center">

@@ -48,7 +48,7 @@ function Achievements() {
       <div className="relative py-20 bg-gray-900">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/team-photo.jpg)' }}
+          style={{ backgroundImage: 'url(/utexastabletennis/team-photo.jpg)' }}
         ></div>
         <div className="absolute inset-0 bg-ut-orange bg-opacity-60"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -86,7 +86,7 @@ function Achievements() {
         <div className="relative rounded-lg overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: 'url(/team-photo.jpg)' }}
+            style={{ backgroundImage: 'url(/utexastabletennis/team-photo.jpg)' }}
           ></div>
           <div className="absolute inset-0 bg-ut-orange bg-opacity-90"></div>
           <div className="relative p-8 text-white">
