@@ -78,10 +78,10 @@ export const womensTeam = [
   },
   { id: 12, name: "Yunyi Li", rating: 1688 },
   { id: 13, name: "Kayana Rajan", rating: 1167 },
-  { id: 14, name: "An Nguyen", rating: 0 },
-  { id: 15, name: "Kaveri Rathod", rating: 0 },
-  { id: 16, name: "Rebecca Song", rating: 0 },
-  { id: 17, name: "Yuan Yao", rating: 0 }
+  { id: 17, name: "Yuan Yao", rating: 827 },
+  { id: 16, name: "Rebecca Song", rating: 813 },
+  { id: 15, name: "Kaveri Rathod", rating: 643 },
+  { id: 14, name: "An Nguyen", rating: 500 }
 ]
 
 export const bTeam = [
