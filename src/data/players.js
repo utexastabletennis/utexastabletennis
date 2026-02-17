@@ -33,7 +33,17 @@ export const aTeam = [
     fhRubber: "Butterfly Dignics 09C",
     bhRubber: "Tibhar Grass D.Tecs"
   },
-  { id: 5, name: "Sambit Kanjilal", rating: 2056, image: "/utexastabletennis/players/sambit_kanjilal.jpg" },
+  {
+    id: 5,
+    name: "Sambit Kanjilal",
+    rating: 2056,
+    image: "/utexastabletennis/players/sambit_kanjilal.jpg",
+    handedness: "Right",
+    playingStyle: "Attacker",
+    blade: "Petr Korbel",
+    fhRubber: "Tenergy 05",
+    bhRubber: "Tenergy 05"
+  },
   {
     id: 6,
     name: "Kaye Chen",
