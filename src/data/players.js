@@ -85,6 +85,7 @@ export const womensTeam = [
 ]
 
 export const bTeam = [
+  { id: 28, name: "Gautam Krishnan", rating: 1771 },
   { id: 18, name: "Anthony Li", rating: 1610 },
   { id: 19, name: "Charles Francis", rating: 1251 },
   { id: 20, name: "Justin Trey", rating: 1242 },
