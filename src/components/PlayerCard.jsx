@@ -35,7 +35,7 @@ function PlayerCard({ player }) {
       <div className="p-6">
         <h3 className="text-xl font-bold text-gray-800 mb-2">{player.name}</h3>
         <div className="flex justify-between items-center mb-4">
-          <span className="text-sm font-semibold text-gray-600">NCTTA Rating</span>
+          <span className="text-sm font-semibold text-gray-600">Rating</span>
           <span className="text-2xl font-bold text-ut-orange">{player.rating}</span>
         </div>
         {player.handedness && (
