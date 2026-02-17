@@ -33,6 +33,7 @@ function Achievements() {
         { event: "Co-ed Teams", placement: "2nd Place", player: "", color: "text-gray-500", medal: "🥈" },
         { event: "Women's Teams", placement: "2nd Place", player: "", color: "text-gray-500", medal: "🥈" },
         { event: "Women's Singles", placement: "3rd Place", player: "Eden Qi", color: "text-amber-700", medal: "🥉" },
+        { event: "Co-ed Teams", placement: "Qualified for Nationals", player: "", color: "text-ut-orange", medal: "🏅" },
       ]
     }
   ]

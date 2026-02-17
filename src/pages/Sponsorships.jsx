@@ -73,12 +73,12 @@ function Sponsorships() {
             <p className="text-xl mb-6">
               Help us compete at the highest level in collegiate table tennis
             </p>
-            <a
-              href="mailto:utexastabletennis@gmail.com"
-              className="inline-block bg-white text-ut-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-            >
-              Contact Us
-            </a>
+            <p className="text-xl">
+              Contact us at{' '}
+              <a href="mailto:utexastabletennis@gmail.com" className="underline font-semibold hover:text-gray-200 transition-colors">
+                utexastabletennis@gmail.com
+              </a>
+            </p>
           </div>
         </div>
       </div>
