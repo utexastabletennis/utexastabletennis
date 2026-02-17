@@ -26,9 +26,9 @@ export const aTeam = [
     rating: 2093,
     handedness: "Right",
     playingStyle: "Attacker",
-    blade: "Viscaria",
-    fhRubber: "Dignics 09C",
-    bhRubber: "Glayzer"
+    blade: "Golden Viscaria",
+    fhRubber: "Butterfly Dignics 09C",
+    bhRubber: "Tibhar Grass D.Tecs"
   },
   { id: 5, name: "Sambit Kanjilal", rating: 2056 },
   {
@@ -37,9 +37,9 @@ export const aTeam = [
     rating: 2021,
     handedness: "Right",
     playingStyle: "Attacker",
-    blade: "Viscaria",
-    fhRubber: "Dignics 05",
-    bhRubber: "Dignics 05"
+    blade: "Yinhe (Galaxy) Z7 VF",
+    fhRubber: "Tenergy 05",
+    bhRubber: "Dawei 388C-1"
   },
   {
     id: 7,
@@ -47,9 +47,9 @@ export const aTeam = [
     rating: 1983,
     handedness: "Left",
     playingStyle: "Attacker",
-    blade: "Ma Long ALC",
-    fhRubber: "Blue Storm Z1",
-    bhRubber: "Blue Storm Z1"
+    blade: "Timo Boll ALC",
+    fhRubber: "Dignics 09C",
+    bhRubber: "Dignics 05"
   },
   { id: 8, name: "Siddharth Vadlamani", rating: 1947 },
   { id: 9, name: "Varun Ragunath", rating: 1921 }
@@ -72,12 +72,21 @@ export const womensTeam = [
     rating: 2021,
     handedness: "Right",
     playingStyle: "Attacker",
-    blade: "Viscaria",
-    fhRubber: "Dignics 05",
-    bhRubber: "Dignics 05"
+    blade: "Yinhe (Galaxy) Z7 VF",
+    fhRubber: "Tenergy 05",
+    bhRubber: "Dawei 388C-1"
   },
   { id: 12, name: "Yunyi Li", rating: 1688 },
-  { id: 13, name: "Kayana Rajan", rating: 1167 },
+  {
+    id: 13,
+    name: "Kayana Rajan",
+    rating: 1167,
+    handedness: "Right",
+    playingStyle: "Attacker",
+    blade: "Viscaria",
+    fhRubber: "Tenergy 05",
+    bhRubber: "Dignics 80"
+  },
   { id: 17, name: "Yuan Yao", rating: 827 },
   { id: 16, name: "Rebecca Song", rating: 813 },
   { id: 15, name: "Kaveri Rathod", rating: 643 },
@@ -87,7 +96,16 @@ export const womensTeam = [
 export const bTeam = [
   { id: 28, name: "Gautam Krishnan", rating: 1771 },
   { id: 18, name: "Anthony Li", rating: 1610 },
-  { id: 19, name: "Charles Francis", rating: 1251 },
+  {
+    id: 19,
+    name: "Charles Francis",
+    rating: 1251,
+    handedness: "Right",
+    playingStyle: "Attacker",
+    blade: "Inkunzi Custom",
+    fhRubber: "Nittaku Hurricane 8-80 Power",
+    bhRubber: "Nittaku Fastarc C1"
+  },
   { id: 20, name: "Justin Trey", rating: 1242 },
   { id: 21, name: "Che An Lin", rating: 1151 },
   { id: 22, name: "Harshadeep Maddali", rating: 1121 },
