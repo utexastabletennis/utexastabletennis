@@ -18,12 +18,20 @@ function PlayerCard({ player }) {
 
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-      <div
-        className="h-48 flex items-center justify-center text-white text-6xl font-bold"
-        style={{ backgroundColor: stringToColor(player.name) }}
-      >
-        {initials}
-      </div>
+      {player.image ? (
+        <img
+          src={player.image}
+          alt={player.name}
+          className="h-48 w-full object-cover"
+        />
+      ) : (
+        <div
+          className="h-48 flex items-center justify-center text-white text-6xl font-bold"
+          style={{ backgroundColor: stringToColor(player.name) }}
+        >
+          {initials}
+        </div>
+      )}
       <div className="p-6">
         <h3 className="text-xl font-bold text-gray-800 mb-2">{player.name}</h3>
         <div className="flex justify-between items-center mb-4">
