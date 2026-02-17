@@ -36,7 +36,7 @@ function Sponsorships() {
                 Supporting competitive table tennis in the Austin area and helping develop the next generation of players.
               </p>
               <a
-                href="https://www.austintt.com/"
+                href="https://www.austintabletennis.net/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-ut-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
