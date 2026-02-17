@@ -6,6 +6,8 @@ function Achievements() {
       results: [
         { event: "Co-ed Teams", placement: "1st Place", player: "", color: "text-yellow-500", medal: "🥇" },
         { event: "Men's Singles", placement: "2nd Place", player: "Michael Guo", color: "text-gray-500", medal: "🥈" },
+        { event: "Men's Singles", placement: "3rd Place", player: "Emery He", color: "text-amber-700", medal: "🥉" },
+        { event: "Men's Singles", placement: "Qualified for Regionals", player: "Sambit Kanjilal", color: "text-ut-orange", medal: "🏅" },
         { event: "Women's Singles", placement: "1st Place", player: "Fan Miao", color: "text-yellow-500", medal: "🥇" },
       ]
     },
