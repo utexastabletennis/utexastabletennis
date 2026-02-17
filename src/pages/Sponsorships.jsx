@@ -74,7 +74,7 @@ function Sponsorships() {
               Help us compete at the highest level in collegiate table tennis
             </p>
             <a
-              href="mailto:sponsor@uttabletennis.org"
+              href="mailto:utexastabletennis@gmail.com"
               className="inline-block bg-white text-ut-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Contact Us
