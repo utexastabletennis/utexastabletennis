@@ -26,9 +26,11 @@ function Sponsorships() {
           <h2 className="text-4xl font-bold text-gray-900 mb-8 text-center">Our Sponsor</h2>
           <div className="bg-white rounded-lg shadow-xl p-8 max-w-2xl mx-auto">
             <div className="flex flex-col items-center">
-              <div className="w-48 h-48 bg-gray-200 rounded-lg mb-6 flex items-center justify-center">
-                <span className="text-gray-400 text-lg">ATTC Logo</span>
-              </div>
+              <img
+                src="/utexastabletennis/attc_logo.png"
+                alt="Austin Table Tennis Club"
+                className="w-48 h-48 object-contain mb-6"
+              />
               <h3 className="text-3xl font-bold text-gray-900 mb-4">Austin Table Tennis Club</h3>
               <p className="text-gray-600 text-center mb-6">
                 Supporting competitive table tennis in the Austin area and helping develop the next generation of players.
