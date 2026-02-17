@@ -35,7 +35,7 @@ function Home() {
             <div className="text-ut-orange text-4xl mb-4">📅</div>
             <h3 className="text-xl font-bold mb-2">Weekly Meetings</h3>
             <p className="text-gray-600">
-              Join us every Tuesday at the Rec Sports Center for practice and training
+              Join us every Tuesday at RSC 2.112 for practice and training
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg">
