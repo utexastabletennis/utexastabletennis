@@ -26,6 +26,7 @@
           <a href="index.html" class="text-white text-xl font-bold">
             UT Table Tennis
           </a>
+          <!-- Desktop navigation -->
           <div class="hidden md:flex items-center space-x-8">
             <a href="index.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
               Home
@@ -43,6 +44,40 @@
               Sponsorships
             </a>
           </div>
+          <!-- Mobile menu button -->
+          <button
+            id="mobile-menu-button"
+            class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-white hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white"
+            type="button"
+            aria-controls="mobile-menu"
+            aria-expanded="false"
+            onclick="toggleMobileMenu()"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile navigation -->
+      <div id="mobile-menu" class="md:hidden hidden border-t border-white/20">
+        <div class="px-4 py-3 space-y-1">
+          <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
+            Home
+          </a>
+          <a href="players.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
+            Players
+          </a>
+          <a href="officers.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
+            Officers
+          </a>
+          <a href="achievements.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
+            Achievements
+          </a>
+          <a href="sponsorships.html" class="block px-3 py-2 rounded-md text-base font-medium bg-white/10 text-white">
+            Sponsorships
+          </a>
         </div>
       </div>
     </nav>
@@ -194,6 +229,18 @@
         </div>
       </div>
     </footer>
+    <script>
+      function toggleMobileMenu() {
+        var menu = document.getElementById('mobile-menu');
+        if (!menu) return;
+        var isHidden = menu.classList.contains('hidden');
+        if (isHidden) {
+          menu.classList.remove('hidden');
+        } else {
+          menu.classList.add('hidden');
+        }
+      }
+    </script>
   </body>
 </html>
 
