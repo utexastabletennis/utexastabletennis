@@ -26,10 +26,23 @@
         font-size: 3.75rem;
         font-weight: 700;
         color: white;
+        /* Default colorful background for players without photos */
+        background: linear-gradient(135deg, #fb923c, #ef4444);
       }
       .player-photo { height: 12rem; }
       .player-photo img { object-fit: cover; width: 100%; height: 100%; }
-      .player-fallback { display: none; align-items: center; justify-content: center; position: absolute; inset: 0; font-size: 3rem; font-weight: 700; color: white; }
+      .player-fallback {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        inset: 0;
+        font-size: 3rem;
+        font-weight: 700;
+        color: white;
+        /* Ensure colored background for fallback initials even if Tailwind classes don't load */
+        background: linear-gradient(135deg, #fb923c, #ea580c);
+      }
       .player-photo .player-fallback.show { display: flex; }
     </style>
   </head>
@@ -47,6 +60,9 @@
             </a>
             <a href="players.html" class="text-white border-b-2 border-white px-3 py-2 text-sm font-medium">
               Players
+            </a>
+            <a href="officers.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
+              Officers
             </a>
             <a href="achievements.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
               Achievements
@@ -102,7 +118,7 @@
                     <div class="font-semibold mb-2">Equipment</div>
                     <div class="text-xs space-y-1">
                       <div><span class="font-medium">Blade:</span> Viscaria</div>
-                      <div><span class="font-medium">FH:</span> Dignics 09C</div>
+                      <div><span class="font-medium">FH:</span> Dignics 05</div>
                       <div><span class="font-medium">BH:</span> Dignics 05</div>
                     </div>
                   </div>
