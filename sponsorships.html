@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UT Table Tennis</title>
+    <title>UT Table Tennis - Sponsorships</title>
     <link rel="icon" type="image/svg+xml" href="vite.svg" />
-    <!-- Tailwind via CDN for a fully static site -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -28,7 +27,7 @@
             UT Table Tennis
           </a>
           <div class="hidden md:flex items-center space-x-8">
-            <a href="index.html" class="text-white border-b-2 border-white px-3 py-2 text-sm font-medium">
+            <a href="index.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
               Home
             </a>
             <a href="players.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
@@ -37,7 +36,7 @@
             <a href="achievements.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
               Achievements
             </a>
-            <a href="sponsorships.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
+            <a href="sponsorships.html" class="text-white border-b-2 border-white px-3 py-2 text-sm font-medium">
               Sponsorships
             </a>
           </div>
@@ -45,93 +44,96 @@
       </div>
     </nav>
 
-    <!-- Main content -->
     <main class="flex-grow">
-      <!-- Hero Section with team photo background -->
-      <div class="relative h-96 bg-gray-900 overflow-hidden">
+      <!-- Hero Section -->
+      <div class="relative h-64 bg-gray-900 overflow-hidden">
         <div
           class="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style="background-image: url('team-photo.jpg'); background-size: cover; background-position: center;"
         ></div>
         <div class="absolute inset-0 bg-ut-orange bg-opacity-40"></div>
-        <div class="relative h-full flex items-center justify-center text-center px-4">
-          <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
-              UT Table Tennis
-            </h1>
-            <p class="text-xl md:text-2xl text-white">
-              Competing in the NCTTA Division 1
-            </p>
-          </div>
+        <div class="relative h-full flex items-center justify-center">
+          <h1 class="text-5xl font-bold text-white">Sponsorships</h1>
         </div>
       </div>
 
-      <!-- About Section -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div class="text-center mb-12">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            We are the University of Texas at Austin's competitive table tennis team,
-            competing in Division 1 of the National Collegiate Table Tennis Association (NCTTA).
-          </p>
-        </div>
+        <!-- Current Sponsor -->
+        <section class="mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Our Sponsor</h2>
+          <div class="bg-white rounded-lg shadow-xl p-8 max-w-2xl mx-auto">
+            <div class="flex flex-col items-center">
+              <img
+                src="attc_logo.png"
+                alt="Austin Table Tennis Club"
+                class="w-48 h-48 object-contain mb-6"
+              />
+              <h3 class="text-3xl font-bold text-gray-900 mb-4">Austin Table Tennis Club</h3>
+              <p class="text-gray-600 text-center mb-6">
+                Supporting competitive table tennis in the Austin area and helping develop the next generation of players.
+              </p>
+              <a
+                href="https://www.austintabletennis.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-ut-orange text-white px-8 py-3 rounded-lg font-semibold hover:bg-orange-600 transition-colors"
+              >
+                Visit ATTC Website
+              </a>
+            </div>
+          </div>
+        </section>
 
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="text-ut-orange text-4xl mb-4">📅</div>
-            <h3 class="text-xl font-bold mb-2">Weekly Meetings</h3>
-            <p class="text-gray-600">
-              Join us every Tuesday at RSC 2.112 for practice and training
-            </p>
+        <!-- Sponsorship Benefits -->
+        <section class="mb-16">
+          <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Sponsorship Benefits</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div class="text-4xl mb-4">🎯</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Brand Visibility</h3>
+              <p class="text-gray-600">Logo placement on team materials and social media</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div class="text-4xl mb-4">🤝</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Community Engagement</h3>
+              <p class="text-gray-600">Connect with students and table tennis enthusiasts</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div class="text-4xl mb-4">📱</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Social Media Promotion</h3>
+              <p class="text-gray-600">Featured across our social media platforms</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <div class="text-4xl mb-4">🏆</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">Tournament Recognition</h3>
+              <p class="text-gray-600">Recognition at NCTTA tournaments</p>
+            </div>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="text-ut-orange text-4xl mb-4">🏆</div>
-            <h3 class="text-xl font-bold mb-2">Competitive Play</h3>
-            <p class="text-gray-600">
-              We compete in NCTTA Division 1 tournaments throughout the year
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow-lg">
-            <div class="text-ut-orange text-4xl mb-4">🎯</div>
-            <h3 class="text-xl font-bold mb-2">All Skill Levels</h3>
-            <p class="text-gray-600">
-              From beginners to advanced players, everyone is welcome to join
-            </p>
-          </div>
-        </div>
+        </section>
 
-        <!-- Join Us Section -->
-        <div class="relative rounded-lg overflow-hidden">
+        <!-- Call to Action -->
+        <section class="relative rounded-lg overflow-hidden">
           <div
             class="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style="background-image: url('team-photo.jpg'); background-size: cover; background-position: center;"
           ></div>
           <div class="absolute inset-0 bg-ut-orange bg-opacity-90"></div>
-          <div class="relative text-white p-8 text-center">
-            <h2 class="text-3xl font-bold mb-4">Join Our Community</h2>
+          <div class="relative text-white p-12 text-center">
+            <h2 class="text-3xl font-bold mb-4">Interested in Sponsoring Us?</h2>
             <p class="text-xl mb-6">
-              Follow us on social media and join our Discord to stay updated
+              Help us compete at the highest level in collegiate table tennis
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <p class="text-xl">
+              Contact us at
               <a
-                href="https://www.instagram.com/texas_tabletennis/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="bg-white text-ut-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+                href="mailto:utexastabletennis@gmail.com"
+                class="underline font-semibold hover:text-gray-200 transition-colors"
               >
-                Follow on Instagram
+                utexastabletennis@gmail.com
               </a>
-              <a
-                href="https://discord.gg/uvnz3g2aaj"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors"
-              >
-                Join Discord
-              </a>
-            </div>
+            </p>
           </div>
-        </div>
+        </section>
       </div>
     </main>
 
@@ -169,3 +171,4 @@
     </footer>
   </body>
 </html>
+
