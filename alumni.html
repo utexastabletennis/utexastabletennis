@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UT Table Tennis - Officers</title>
+    <title>UT Table Tennis - Alumni</title>
     <link rel="icon" type="image/svg+xml" href="vite.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -17,6 +17,32 @@
         },
       };
     </script>
+    <style>
+      .player-initials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 12rem;
+        font-size: 3.75rem;
+        font-weight: 700;
+        color: white;
+        background: linear-gradient(135deg, #fb923c, #ef4444);
+      }
+      .player-photo { height: 12rem; }
+      .player-photo img { object-fit: cover; width: 100%; height: 100%; }
+      .player-fallback {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        inset: 0;
+        font-size: 3rem;
+        font-weight: 700;
+        color: white;
+        background: linear-gradient(135deg, #fb923c, #ea580c);
+      }
+      .player-photo .player-fallback.show { display: flex; }
+    </style>
   </head>
   <body class="bg-gray-100 flex flex-col min-h-screen">
     <!-- Navbar -->
@@ -37,10 +63,10 @@
             <a href="players.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
               Players
             </a>
-            <a href="officers.html" class="text-white border-b-2 border-white px-3 py-2 text-sm font-medium">
+            <a href="officers.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
               Officers
             </a>
-            <a href="alumni.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
+            <a href="alumni.html" class="text-white border-b-2 border-white px-3 py-2 text-sm font-medium">
               Alumni
             </a>
             <a href="achievements.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
@@ -78,10 +104,10 @@
           <a href="players.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
             Players
           </a>
-          <a href="officers.html" class="block px-3 py-2 rounded-md text-base font-medium bg-white/10 text-white">
+          <a href="officers.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
             Officers
           </a>
-          <a href="alumni.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
+          <a href="alumni.html" class="block px-3 py-2 rounded-md text-base font-medium bg-white/10 text-white">
             Alumni
           </a>
           <a href="achievements.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
@@ -102,117 +128,130 @@
           style="background-image: url('team-photo.jpg'); background-size: cover; background-position: center;"
         ></div>
         <div class="absolute inset-0 bg-ut-orange bg-opacity-40"></div>
-        <div class="relative h-full flex items-center justify-center">
-          <h1 class="text-5xl font-bold text-white">Our Officers</h1>
+        <div class="relative h-full flex items-center justify-center text-center px-4">
+          <div>
+            <h1 class="text-5xl font-bold text-white mb-2">Our Alumni</h1>
+            <p class="text-xl text-white/90">Honoring the graduates of UT Table Tennis</p>
+          </div>
         </div>
       </div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-2">Leadership Team (2026-2027 Season)</h2>
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Graduated Members</h2>
           <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-            Meet the officers dedicated to leading UT Table Tennis
+            Thank you to our amazing alumni for their leadership, dedication, and competitive spirit!
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Co-President - Sambit -->
-          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center border-2 border-orange-200 hover:border-ut-orange transition-colors">
-            <div class="w-28 h-28 rounded-full overflow-hidden bg-gray-200 mb-4 shadow-md flex items-center justify-center">
-              <img
-                src="players/sambit_kanjilal.jpg"
-                alt="Sambit Kanjilal"
-                class="w-full h-full object-cover"
-                onerror="this.style.display='none';"
-              />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Qing Chai -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-gray-100">
+            <div class="player-photo relative w-full bg-gray-200">
+              <img src="players/qing_chai.jpg" alt="Qing Chai" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');" />
+              <div class="player-fallback bg-gradient-to-br from-orange-500 to-ut-orange">QC</div>
             </div>
-            <span class="bg-orange-100 text-ut-orange text-xs font-bold px-3 py-1 rounded-full mb-2">2026-2027</span>
-            <h3 class="text-xl font-bold text-gray-900 mb-1">Sambit Kanjilal</h3>
-            <p class="text-ut-orange font-bold text-lg mb-2">Co-President</p>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-gray-900">Qing Chai</h3>
+                <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Former President</span>
+              </div>
+              <p class="text-sm font-semibold text-gray-500 mb-4">A-Team &amp; Executive Leadership</p>
+              <div class="flex justify-between items-center mb-4 bg-orange-50 p-3 rounded-lg">
+                <span class="text-sm font-semibold text-gray-700">NCTTA Rating</span>
+                <span class="text-2xl font-bold text-ut-orange">1983</span>
+              </div>
+              <div class="space-y-2 text-sm text-gray-600 border-t pt-3">
+                <div class="flex justify-between">
+                  <span class="font-semibold">Handedness:</span>
+                  <span>Left</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="font-semibold">Style:</span>
+                  <span>Attacker</span>
+                </div>
+                <div class="pt-2 border-t border-gray-200">
+                  <div class="font-semibold mb-2 text-gray-700">Equipment</div>
+                  <div class="text-xs space-y-1 text-gray-600">
+                    <div><span class="font-medium">Blade:</span> Timo Boll ALC</div>
+                    <div><span class="font-medium">FH:</span> Dignics 09C</div>
+                    <div><span class="font-medium">BH:</span> Dignics 05</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Co-President - Michael -->
-          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center border-2 border-orange-200 hover:border-ut-orange transition-colors">
-            <div class="w-28 h-28 rounded-full overflow-hidden bg-gray-200 mb-4 shadow-md flex items-center justify-center">
-              <img
-                src="players/michael_guo.jpg"
-                alt="Michael Guo"
-                class="w-full h-full object-cover"
-                onerror="this.style.display='none';"
-              />
+          <!-- Yunyi Li -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-gray-100">
+            <div class="player-initials bg-gradient-to-br from-fuchsia-500 to-pink-600">
+              YL
             </div>
-            <span class="bg-orange-100 text-ut-orange text-xs font-bold px-3 py-1 rounded-full mb-2">2026-2027</span>
-            <h3 class="text-xl font-bold text-gray-900 mb-1">Michael Guo</h3>
-            <p class="text-ut-orange font-bold text-lg mb-2">Co-President</p>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-gray-900">Yunyi Li</h3>
+                <span class="bg-pink-100 text-pink-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Women's Team</span>
+              </div>
+              <p class="text-sm font-semibold text-gray-500 mb-4">NCTTA Nationals Competitor</p>
+              <div class="flex justify-between items-center mb-4 bg-orange-50 p-3 rounded-lg">
+                <span class="text-sm font-semibold text-gray-700">NCTTA Rating</span>
+                <span class="text-2xl font-bold text-ut-orange">1688</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Treasurer -->
-          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
-            <div class="w-28 h-28 rounded-full bg-gradient-to-br from-orange-400 to-amber-600 text-white font-bold text-3xl mb-4 flex items-center justify-center shadow-md">
-              SV
+          <!-- Rebecca Song -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-gray-100">
+            <div class="player-initials bg-gradient-to-br from-lime-500 to-emerald-600">
+              RS
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-1">Sid (Siddharth Vadlamani)</h3>
-            <p class="text-ut-orange font-semibold mb-2">Treasurer</p>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-gray-900">Rebecca Song</h3>
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">Women's Team</span>
+              </div>
+              <p class="text-sm font-semibold text-gray-500 mb-4">NCTTA Nationals Competitor</p>
+              <div class="flex justify-between items-center mb-4 bg-orange-50 p-3 rounded-lg">
+                <span class="text-sm font-semibold text-gray-700">NCTTA Rating</span>
+                <span class="text-2xl font-bold text-ut-orange">813</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Social Media Director -->
-          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
-            <div class="w-28 h-28 rounded-full overflow-hidden bg-gray-200 mb-4 shadow-md flex items-center justify-center">
-              <img
-                src="players/kaye_chen.jpg"
-                alt="Kaye Chen"
-                class="w-full h-full object-cover"
-                onerror="this.style.display='none';"
-              />
+          <!-- David Li -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-gray-100">
+            <div class="player-initials bg-gradient-to-br from-zinc-500 to-slate-700">
+              DL
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-1">Kaye Chen</h3>
-            <p class="text-ut-orange font-semibold mb-2">Social Media Director</p>
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-gray-900">David Li</h3>
+                <span class="bg-slate-100 text-slate-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">B Team</span>
+              </div>
+              <p class="text-sm font-semibold text-gray-500 mb-4">Divisional &amp; Regional Player</p>
+              <div class="flex justify-between items-center mb-4 bg-orange-50 p-3 rounded-lg">
+                <span class="text-sm font-semibold text-gray-700">NCTTA Rating</span>
+                <span class="text-2xl font-bold text-ut-orange">867</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Strategic Partnerships Officer -->
-          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
-            <div class="w-28 h-28 rounded-full overflow-hidden bg-gray-200 mb-4 shadow-md flex items-center justify-center">
-              <img
-                src="players/charles_francis.jpg"
-                alt="Charles (Chas) Francis"
-                class="w-full h-full object-cover"
-                onerror="this.style.display='none';"
-              />
+          <!-- Jarrod Tung -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-gray-100">
+            <div class="player-initials bg-gradient-to-br from-amber-500 to-orange-700">
+              JT
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-1">Chas (Charles Francis)</h3>
-            <p class="text-ut-orange font-semibold mb-2">Strategic Partnerships Officer</p>
-          </div>
-
-          <!-- Events Director - Raymond -->
-          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
-            <div class="w-28 h-28 rounded-full overflow-hidden bg-gray-200 mb-4 shadow-md flex items-center justify-center">
-              <img
-                src="players/raymond.png"
-                alt="Raymond"
-                class="w-full h-full object-cover"
-                onerror="this.style.display='none';"
-              />
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-gray-900">Jarrod Tung</h3>
+                <span class="bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">B Team</span>
+              </div>
+              <p class="text-sm font-semibold text-gray-500 mb-4">Divisional &amp; Regional Player</p>
+              <div class="flex justify-between items-center mb-4 bg-orange-50 p-3 rounded-lg">
+                <span class="text-sm font-semibold text-gray-700">NCTTA Rating</span>
+                <span class="text-2xl font-bold text-ut-orange">725</span>
+              </div>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-1">Raymond</h3>
-            <p class="text-ut-orange font-semibold mb-2">Events Director</p>
-          </div>
-
-          <!-- Events Director - Cody -->
-          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
-            <div class="w-28 h-28 rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 text-white font-bold text-3xl mb-4 flex items-center justify-center shadow-md">
-              CD
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-1">Cody</h3>
-            <p class="text-ut-orange font-semibold mb-2">Events Director</p>
-          </div>
-
-          <!-- Senior Advisor -->
-          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
-            <div class="w-28 h-28 rounded-full bg-gradient-to-br from-emerald-400 to-teal-600 text-white font-bold text-3xl mb-4 flex items-center justify-center shadow-md">
-              VD
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-1">Ved</h3>
-            <p class="text-ut-orange font-semibold mb-2">Senior Advisor</p>
           </div>
         </div>
       </div>

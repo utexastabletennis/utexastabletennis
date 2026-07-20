@@ -26,7 +26,6 @@
         font-size: 3.75rem;
         font-weight: 700;
         color: white;
-        /* Default colorful background for players without photos */
         background: linear-gradient(135deg, #fb923c, #ef4444);
       }
       .player-photo { height: 12rem; }
@@ -40,7 +39,6 @@
         font-size: 3rem;
         font-weight: 700;
         color: white;
-        /* Ensure colored background for fallback initials even if Tailwind classes don't load */
         background: linear-gradient(135deg, #fb923c, #ea580c);
       }
       .player-photo .player-fallback.show { display: flex; }
@@ -59,11 +57,17 @@
             <a href="index.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
               Home
             </a>
+            <a href="updates.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
+              Updates
+            </a>
             <a href="players.html" class="text-white border-b-2 border-white px-3 py-2 text-sm font-medium">
               Players
             </a>
             <a href="officers.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
               Officers
+            </a>
+            <a href="alumni.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
+              Alumni
             </a>
             <a href="achievements.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
               Achievements
@@ -94,11 +98,17 @@
           <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
             Home
           </a>
+          <a href="updates.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
+            Updates
+          </a>
           <a href="players.html" class="block px-3 py-2 rounded-md text-base font-medium bg-white/10 text-white">
             Players
           </a>
           <a href="officers.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
             Officers
+          </a>
+          <a href="alumni.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
+            Alumni
           </a>
           <a href="achievements.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
             Achievements
@@ -119,23 +129,39 @@
         ></div>
         <div class="absolute inset-0 bg-ut-orange bg-opacity-40"></div>
         <div class="relative h-full flex items-center justify-center">
-          <h1 class="text-5xl font-bold text-white">Our Players</h1>
+          <h1 class="text-5xl font-bold text-white">Our Active Players</h1>
         </div>
       </div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- Alumni Page Banner -->
+        <div class="mb-12 bg-gradient-to-r from-orange-500 to-amber-600 rounded-xl text-white p-6 shadow-lg flex flex-col md:flex-row items-center justify-between">
+          <div class="mb-4 md:mb-0">
+            <h2 class="text-2xl font-bold mb-1">Looking for Graduated Members?</h2>
+            <p class="text-white/90 text-sm">Check out our Alumni page honoring past players and presidents including Qing, Yunyi, Rebecca, David, and Jarrod!</p>
+          </div>
+          <a href="alumni.html" class="bg-white text-ut-orange font-bold px-6 py-2.5 rounded-lg hover:bg-gray-100 transition-colors shadow-md text-sm whitespace-nowrap">
+            View Alumni Page &rarr;
+          </a>
+        </div>
+
         <!-- A Team -->
         <section class="mb-16">
           <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">A Team</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Cards manually reflect data/players.js -->
+            
+            <!-- Michael Guo (Co-President) -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-photo relative w-full bg-gray-200">
                 <img src="players/michael_guo.jpg" alt="Michael Guo" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');" />
                 <div class="player-fallback bg-gradient-to-br from-orange-500 to-ut-orange">MG</div>
               </div>
               <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Michael Guo</h3>
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-xl font-bold text-gray-800">Michael Guo</h3>
+                  <span class="bg-orange-100 text-ut-orange text-xs font-bold px-2 py-0.5 rounded">Co-President</span>
+                </div>
                 <div class="flex justify-between items-center mb-4">
                   <span class="text-sm font-semibold text-gray-600">Rating</span>
                   <span class="text-2xl font-bold text-ut-orange">2345</span>
@@ -161,6 +187,7 @@
               </div>
             </div>
 
+            <!-- Fan Miao -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-photo relative w-full bg-gray-200">
                 <img src="players/fan_miao.jpg" alt="Fan Miao" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');" />
@@ -193,10 +220,10 @@
               </div>
             </div>
 
-            <!-- Players without full equipment data use initials and rating only -->
+            <!-- Samuel Tao -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-initials bg-gradient-to-br from-orange-400 to-red-500">
-                MG
+                ST
               </div>
               <div class="p-6">
                 <h3 class="text-xl font-bold text-gray-800 mb-2">Samuel Tao</h3>
@@ -207,6 +234,7 @@
               </div>
             </div>
 
+            <!-- Emery He -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-photo relative w-full bg-gray-200">
                 <img src="players/emery_he.jpg" alt="Yiming (Emery) He" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');" />
@@ -239,13 +267,17 @@
               </div>
             </div>
 
+            <!-- Sambit Kanjilal (Co-President) -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-photo relative w-full bg-gray-200">
                 <img src="players/sambit_kanjilal.jpg" alt="Sambit Kanjilal" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');" />
                 <div class="player-fallback bg-gradient-to-br from-orange-500 to-ut-orange">SK</div>
               </div>
               <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Sambit Kanjilal</h3>
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="text-xl font-bold text-gray-800">Sambit Kanjilal</h3>
+                  <span class="bg-orange-100 text-ut-orange text-xs font-bold px-2 py-0.5 rounded">Co-President</span>
+                </div>
                 <div class="flex justify-between items-center mb-4">
                   <span class="text-sm font-semibold text-gray-600">Rating</span>
                   <span class="text-2xl font-bold text-ut-orange">2056</span>
@@ -271,6 +303,7 @@
               </div>
             </div>
 
+            <!-- Kaye Chen -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-photo relative w-full bg-gray-200">
                 <img src="players/kaye_chen.jpg" alt="Kaye Chen" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');" />
@@ -294,7 +327,7 @@
                   <div class="pt-2 border-t border-gray-200">
                     <div class="font-semibold mb-2">Equipment</div>
                     <div class="text-xs space-y-1">
-                      <div><span class="font-medium">Blade:</span> Yinhe (Galaxy) Z7 VF</div>
+                      <div><span class="font-medium">Blade:</span> Yinhe Z7 VF</div>
                       <div><span class="font-medium">FH:</span> Tenergy 05</div>
                       <div><span class="font-medium">BH:</span> Dawei 388C-1</div>
                     </div>
@@ -303,38 +336,7 @@
               </div>
             </div>
 
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div class="player-photo relative w-full bg-gray-200">
-                <img src="players/qing_chai.jpg" alt="Qing Chai" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');" />
-                <div class="player-fallback bg-gradient-to-br from-orange-500 to-ut-orange">QC</div>
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Qing Chai</h3>
-                <div class="flex justify-between items-center mb-4">
-                  <span class="text-sm font-semibold text-gray-600">Rating</span>
-                  <span class="text-2xl font-bold text-ut-orange">1983</span>
-                </div>
-                <div class="space-y-2 text-sm text-gray-600 border-t pt-3">
-                  <div class="flex justify-between">
-                    <span class="font-semibold">Handedness:</span>
-                    <span>Left</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="font-semibold">Style:</span>
-                    <span>Attacker</span>
-                  </div>
-                  <div class="pt-2 border-t border-gray-200">
-                    <div class="font-semibold mb-2">Equipment</div>
-                    <div class="text-xs space-y-1">
-                      <div><span class="font-medium">Blade:</span> Timo Boll ALC</div>
-                      <div><span class="font-medium">FH:</span> Dignics 09C</div>
-                      <div><span class="font-medium">BH:</span> Dignics 05</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+            <!-- Siddharth Vadlamani -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-initials bg-gradient-to-br from-sky-400 to-blue-600">
                 SV
@@ -348,6 +350,7 @@
               </div>
             </div>
 
+            <!-- Varun Ragunath -->
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-initials bg-gradient-to-br from-emerald-400 to-teal-600">
                 VR
@@ -360,6 +363,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </section>
 
@@ -367,6 +371,7 @@
         <section class="mb-16">
           <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">Women's Team</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-photo relative w-full bg-gray-200">
                 <img src="players/fan_miao.jpg" alt="Fan Miao" onerror="this.style.display='none'; this.nextElementSibling.classList.add('show');" />
@@ -377,24 +382,6 @@
                 <div class="flex justify-between items-center mb-4">
                   <span class="text-sm font-semibold text-gray-600">Rating</span>
                   <span class="text-2xl font-bold text-ut-orange">2306</span>
-                </div>
-                <div class="space-y-2 text-sm text-gray-600 border-t pt-3">
-                  <div class="flex justify-between">
-                    <span class="font-semibold">Handedness:</span>
-                    <span>Right</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="font-semibold">Style:</span>
-                    <span>Chopper</span>
-                  </div>
-                  <div class="pt-2 border-t border-gray-200">
-                    <div class="font-semibold mb-2">Equipment</div>
-                    <div class="text-xs space-y-1">
-                      <div><span class="font-medium">Blade:</span> Joo Sae-hyuk</div>
-                      <div><span class="font-medium">FH:</span> DHS Hurricane</div>
-                      <div><span class="font-medium">BH:</span> Victas PR-1</div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -409,37 +396,6 @@
                 <div class="flex justify-between items-center mb-4">
                   <span class="text-sm font-semibold text-gray-600">Rating</span>
                   <span class="text-2xl font-bold text-ut-orange">2021</span>
-                </div>
-                <div class="space-y-2 text-sm text-gray-600 border-t pt-3">
-                  <div class="flex justify-between">
-                    <span class="font-semibold">Handedness:</span>
-                    <span>Right</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="font-semibold">Style:</span>
-                    <span>Attacker</span>
-                  </div>
-                  <div class="pt-2 border-t border-gray-200">
-                    <div class="font-semibold mb-2">Equipment</div>
-                    <div class="text-xs space-y-1">
-                      <div><span class="font-medium">Blade:</span> Yinhe (Galaxy) Z7 VF</div>
-                      <div><span class="font-medium">FH:</span> Tenergy 05</div>
-                      <div><span class="font-medium">BH:</span> Dawei 388C-1</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div class="player-initials bg-gradient-to-br from-fuchsia-400 to-pink-600">
-                YL
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Yunyi Li</h3>
-                <div class="flex justify-between items-center mb-4">
-                  <span class="text-sm font-semibold text-gray-600">Rating</span>
-                  <span class="text-2xl font-bold text-ut-orange">1688</span>
                 </div>
               </div>
             </div>
@@ -454,24 +410,6 @@
                   <span class="text-sm font-semibold text-gray-600">Rating</span>
                   <span class="text-2xl font-bold text-ut-orange">1167</span>
                 </div>
-                <div class="space-y-2 text-sm text-gray-600 border-t pt-3">
-                  <div class="flex justify-between">
-                    <span class="font-semibold">Handedness:</span>
-                    <span>Right</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="font-semibold">Style:</span>
-                    <span>Attacker</span>
-                  </div>
-                  <div class="pt-2 border-t border-gray-200">
-                    <div class="font-semibold mb-2">Equipment</div>
-                    <div class="text-xs space-y-1">
-                      <div><span class="font-medium">Blade:</span> Viscaria</div>
-                      <div><span class="font-medium">FH:</span> Tenergy 05</div>
-                      <div><span class="font-medium">BH:</span> Dignics 80</div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -484,19 +422,6 @@
                 <div class="flex justify-between items-center mb-4">
                   <span class="text-sm font-semibold text-gray-600">Rating</span>
                   <span class="text-2xl font-bold text-ut-orange">827</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div class="player-initials bg-gradient-to-br from-lime-300 to-green-600">
-                RS
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Rebecca Song</h3>
-                <div class="flex justify-between items-center mb-4">
-                  <span class="text-sm font-semibold text-gray-600">Rating</span>
-                  <span class="text-2xl font-bold text-ut-orange">813</span>
                 </div>
               </div>
             </div>
@@ -526,6 +451,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </section>
 
@@ -533,6 +459,7 @@
         <section class="mb-16">
           <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">B Team</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-initials bg-gradient-to-br from-cyan-300 to-cyan-700">
                 GK
@@ -569,24 +496,6 @@
                 <div class="flex justify-between items-center mb-4">
                   <span class="text-sm font-semibold text-gray-600">Rating</span>
                   <span class="text-2xl font-bold text-ut-orange">1251</span>
-                </div>
-                <div class="space-y-2 text-sm text-gray-600 border-t pt-3">
-                  <div class="flex justify-between">
-                    <span class="font-semibold">Handedness:</span>
-                    <span>Right</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span class="font-semibold">Style:</span>
-                    <span>Attacker</span>
-                  </div>
-                  <div class="pt-2 border-t border-gray-200">
-                    <div class="font-semibold mb-2">Equipment</div>
-                    <div class="text-xs space-y-1">
-                      <div><span class="font-medium">Blade:</span> Inkunzi Custom</div>
-                      <div><span class="font-medium">FH:</span> Nittaku Hurricane 8-80 Power</div>
-                      <div><span class="font-medium">BH:</span> Nittaku Fastarc C1</div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -657,32 +566,6 @@
             </div>
 
             <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div class="player-initials bg-gradient-to-br from-zinc-300 to-zinc-700">
-                DL
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">David Li</h3>
-                <div class="flex justify-between items-center mb-4">
-                  <span class="text-sm font-semibold text-gray-600">Rating</span>
-                  <span class="text-2xl font-bold text-ut-orange">867</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <div class="player-initials bg-gradient-to-br from-stone-300 to-stone-700">
-                JT
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">Jarrod Tung</h3>
-                <div class="flex justify-between items-center mb-4">
-                  <span class="text-sm font-semibold text-gray-600">Rating</span>
-                  <span class="text-2xl font-bold text-ut-orange">725</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
               <div class="player-initials bg-gradient-to-br from-red-300 to-red-700">
                 LS
               </div>
@@ -694,8 +577,10 @@
                 </div>
               </div>
             </div>
+
           </div>
         </section>
+
       </div>
     </main>
 
@@ -704,7 +589,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="mb-4 md:mb-0">
-            <p class="text-sm">&copy; 2025 UT Table Tennis. All rights reserved.</p>
+            <p class="text-sm">&copy; 2026 UT Table Tennis. All rights reserved.</p>
           </div>
           <div class="flex space-x-6">
             <a
@@ -745,4 +630,3 @@
     </script>
   </body>
 </html>
-

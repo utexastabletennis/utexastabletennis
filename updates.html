@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UT Table Tennis</title>
+    <title>UT Table Tennis - Updates &amp; News</title>
     <link rel="icon" type="image/svg+xml" href="vite.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -28,10 +28,10 @@
           </a>
           <!-- Desktop navigation -->
           <div class="hidden md:flex items-center space-x-8">
-            <a href="index.html" class="text-white border-b-2 border-white px-3 py-2 text-sm font-medium">
+            <a href="index.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
               Home
             </a>
-            <a href="updates.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
+            <a href="updates.html" class="text-white border-b-2 border-white px-3 py-2 text-sm font-medium">
               Updates
             </a>
             <a href="players.html" class="text-white/80 hover:text-white px-3 py-2 text-sm font-medium">
@@ -69,10 +69,10 @@
       <!-- Mobile navigation -->
       <div id="mobile-menu" class="md:hidden hidden border-t border-white/20">
         <div class="px-4 py-3 space-y-1">
-          <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium bg-white/10 text-white">
+          <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
             Home
           </a>
-          <a href="updates.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
+          <a href="updates.html" class="block px-3 py-2 rounded-md text-base font-medium bg-white/10 text-white">
             Updates
           </a>
           <a href="players.html" class="block px-3 py-2 rounded-md text-base font-medium text-white/80 hover:bg-white/10 hover:text-white">
@@ -94,10 +94,9 @@
       </div>
     </nav>
 
-    <!-- Main content -->
     <main class="flex-grow">
-      <!-- Hero Section with team photo background -->
-      <div class="relative h-96 bg-gray-900 overflow-hidden">
+      <!-- Hero Section -->
+      <div class="relative h-64 bg-gray-900 overflow-hidden">
         <div
           class="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style="background-image: url('team-photo.jpg'); background-size: cover; background-position: center;"
@@ -105,109 +104,20 @@
         <div class="absolute inset-0 bg-ut-orange bg-opacity-40"></div>
         <div class="relative h-full flex items-center justify-center text-center px-4">
           <div>
-            <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">
-              UT Table Tennis
-            </h1>
-            <p class="text-xl md:text-2xl text-white font-medium">
-              Competing in NCTTA Division 1 &amp; National Championships
-            </p>
+            <h1 class="text-5xl font-bold text-white mb-2">Updates &amp; News</h1>
+            <p class="text-xl text-white/90">Local Tournaments, National Highlights &amp; Announcements</p>
           </div>
         </div>
       </div>
 
-      <!-- About Section -->
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
-        <div class="text-center">
-          <h2 class="text-4xl font-bold text-gray-900 mb-4">About Us</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            We are the University of Texas at Austin's competitive table tennis team,
-            competing in Division 1 of the National Collegiate Table Tennis Association (NCTTA).
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-          <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-            <div class="text-ut-orange text-4xl mb-4">📅</div>
-            <h3 class="text-xl font-bold mb-2">Weekly Meetings</h3>
-            <p class="text-gray-600">
-              Join us every Tuesday at RSC 2.112 for practice and training
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-            <div class="text-ut-orange text-4xl mb-4">🏆</div>
-            <h3 class="text-xl font-bold mb-2">Competitive Play</h3>
-            <p class="text-gray-600">
-              We compete in local Austin tournaments, NCTTA Divisionals, Regionals, and Nationals
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
-            <div class="text-ut-orange text-4xl mb-4">🎯</div>
-            <h3 class="text-xl font-bold mb-2">All Skill Levels</h3>
-            <p class="text-gray-600">
-              From beginners to top-rated national competitors, everyone is welcome to join
-            </p>
-          </div>
-        </div>
-
-        <!-- Latest Updates & News Spotlight -->
-        <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
-          <div class="flex flex-col md:flex-row md:items-center justify-between border-b border-gray-200 pb-4 mb-6 gap-4">
-            <div>
-              <span class="bg-orange-100 text-ut-orange text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Recent News</span>
-              <h2 class="text-3xl font-bold text-gray-900 mt-2">Latest Club Updates</h2>
-            </div>
-            <a href="updates.html" class="inline-flex items-center text-ut-orange font-bold hover:underline text-sm">
-              View All Updates &rarr;
-            </a>
-          </div>
-
-          <div class="grid md:grid-cols-3 gap-6">
-            <!-- Update Card 1: 2025-26 Nationals -->
-            <div class="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-xl border border-orange-100 flex flex-col justify-between">
-              <div>
-                <span class="text-2xl mb-2 block">🏆</span>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">2025-26 NCTTA Nationals</h3>
-                <p class="text-sm text-gray-700 space-y-1">
-                  • <strong>Women's Team</strong>: 6th in Nation<br />
-                  • <strong>Men's Team</strong>: 6th in Nation<br />
-                  • <strong>Sambit Kanjilal</strong>: 1st Place Consolation Singles Champion!
-                </p>
-              </div>
-              <a href="achievements.html" class="text-xs font-bold text-ut-orange mt-4 inline-block hover:underline">Read Results &rarr;</a>
-            </div>
-
-            <!-- Update Card 2: 2026-2027 Co-Presidents -->
-            <div class="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-xl border border-orange-100 flex flex-col justify-between">
-              <div>
-                <span class="text-2xl mb-2 block">📣</span>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">2026-2027 Leadership</h3>
-                <p class="text-sm text-gray-700">
-                  Congratulations to <strong>Sambit Kanjilal</strong> and <strong>Michael Guo</strong>, our new 2026-2027 <strong>Co-Presidents</strong>! Special thanks to Qing Chai and Emery He.
-                </p>
-              </div>
-              <a href="officers.html" class="text-xs font-bold text-ut-orange mt-4 inline-block hover:underline">Meet Officers &rarr;</a>
-            </div>
-
-            <!-- Update Card 3: Local Tournaments -->
-            <div class="bg-gradient-to-br from-orange-50 to-amber-50 p-6 rounded-xl border border-orange-100 flex flex-col justify-between">
-              <div>
-                <span class="text-2xl mb-2 block">🏓</span>
-                <h3 class="text-lg font-bold text-gray-900 mb-2">Local Austin Tournaments</h3>
-                <p class="text-sm text-gray-700">
-                  Get ready for upcoming monthly giant round robins at Austin Table Tennis Club (ATTC) and campus intramurals!
-                </p>
-              </div>
-              <a href="updates.html" class="text-xs font-bold text-ut-orange mt-4 inline-block hover:underline">Tournament Info &rarr;</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Featured Media Video Spotlight -->
-        <div class="bg-white rounded-2xl shadow-xl overflow-hidden p-6 md:p-10 border border-gray-100 text-center">
-          <div class="max-w-3xl mx-auto mb-6">
+        
+        <!-- Video Feature Spotlight -->
+        <section class="bg-white rounded-2xl shadow-xl overflow-hidden p-6 md:p-10 border border-gray-100">
+          <div class="max-w-4xl mx-auto text-center mb-8">
             <span class="bg-orange-100 text-ut-orange text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Featured Video</span>
-            <h2 class="text-3xl font-bold text-gray-900 mt-3 mb-2">UT Table Tennis Video Spotlight</h2>
-            <p class="text-gray-600 text-sm">Check out our team in action on YouTube!</p>
+            <h2 class="text-3xl font-bold text-gray-900 mt-3 mb-2">UT Table Tennis Action Spotlight</h2>
+            <p class="text-gray-600">Watch our competitive highlights, match gameplay, and club moments in action!</p>
           </div>
           <div class="relative w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-2xl bg-black" style="padding-top: 56.25%;">
             <iframe
@@ -219,40 +129,104 @@
               allowfullscreen
             ></iframe>
           </div>
-        </div>
+        </section>
 
-        <!-- Join Us Section -->
-        <div class="relative rounded-2xl overflow-hidden shadow-xl">
-          <div
-            class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style="background-image: url('team-photo.jpg'); background-size: cover; background-position: center;"
-          ></div>
-          <div class="absolute inset-0 bg-ut-orange bg-opacity-90"></div>
-          <div class="relative text-white p-10 text-center">
-            <h2 class="text-3xl font-bold mb-4">Join Our Community</h2>
-            <p class="text-xl mb-6">
-              Follow us on social media and join our Discord to stay updated on practice, tournaments, and events
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://www.instagram.com/texas_tabletennis/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="bg-white text-ut-orange px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-md"
-              >
-                Follow on Instagram
-              </a>
-              <a
-                href="https://discord.gg/uvnz3g2aaj"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="bg-gray-800 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors shadow-md"
-              >
-                Join Discord
-              </a>
+        <!-- 2025-2026 NCTTA Nationals Highlights -->
+        <section class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+          <div class="border-b border-gray-200 pb-4 mb-8">
+            <div class="flex items-center space-x-3">
+              <span class="text-3xl">🏆</span>
+              <div>
+                <h2 class="text-3xl font-bold text-gray-900">2025-2026 NCTTA Nationals Finish</h2>
+                <p class="text-gray-500 text-sm">National Championship Results</p>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100 text-center">
+              <div class="text-4xl mb-3">🏅</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Women's Team</h3>
+              <p class="text-3xl font-extrabold text-ut-orange mb-2">6th Place</p>
+              <p class="text-sm text-gray-600">Finished 6th overall in the Nation at NCTTA Nationals!</p>
+            </div>
+            <div class="bg-gradient-to-br from-orange-50 to-amber-50 rounded-xl p-6 border border-orange-100 text-center">
+              <div class="text-4xl mb-3">🏅</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Men's Team</h3>
+              <p class="text-3xl font-extrabold text-ut-orange mb-2">6th Place</p>
+              <p class="text-sm text-gray-600">Secured a 6th place finish in the Nation for Division 1 Co-ed Teams!</p>
+            </div>
+            <div class="bg-gradient-to-br from-yellow-50 to-amber-100 rounded-xl p-6 border border-yellow-200 text-center">
+              <div class="text-4xl mb-3">🥇</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-1">Men's Singles Consolation</h3>
+              <p class="text-3xl font-extrabold text-yellow-600 mb-2">Champion</p>
+              <p class="text-sm font-bold text-gray-800">Sambit Kanjilal</p>
+              <p class="text-xs text-gray-600 mt-1">1st Place Consolation Men's Singles Champion</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2026-2027 Executive Leadership Announcement -->
+        <section class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+          <div class="border-b border-gray-200 pb-4 mb-6">
+            <div class="flex items-center space-x-3">
+              <span class="text-3xl">📣</span>
+              <div>
+                <h2 class="text-3xl font-bold text-gray-900">2026-2027 Leadership Announcement</h2>
+                <p class="text-gray-500 text-sm">New Co-Presidents Stepping Up</p>
+              </div>
+            </div>
+          </div>
+          <div class="prose max-w-none text-gray-700 space-y-4">
+            <p>
+              We are excited to announce our new executive leadership for the <strong>2026-2027 season</strong>! 
+              <strong>Sambit Kanjilal</strong> and <strong>Michael Guo</strong> are taking the helm as <strong>Co-Presidents</strong> of UT Table Tennis.
+            </p>
+            <p>
+              We extend our heartfelt gratitude to outgoing presidents <strong>Qing Chai</strong> and <strong>Emery He</strong> for their outstanding leadership, guidance, and contributions to the club over the past years. Qing has officially graduated and joined our alumni, while Emery will continue as an active player on our A-Team!
+            </p>
+          </div>
+        </section>
+
+        <!-- Local Austin Tournaments & Club Events -->
+        <section class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+          <div class="border-b border-gray-200 pb-4 mb-8">
+            <div class="flex items-center space-x-3">
+              <span class="text-3xl">🏓</span>
+              <div>
+                <h2 class="text-3xl font-bold text-gray-900">Local Austin Tournaments &amp; Practice</h2>
+                <p class="text-gray-500 text-sm">Upcoming Events &amp; Open Play</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                <span class="text-ut-orange mr-2">📍</span> Austin Table Tennis Club (ATTC) Tournaments
+              </h3>
+              <p class="text-gray-600 mb-4 text-sm">
+                Our members regularly compete in local USATT sanctioned and giant round-robin tournaments at ATTC. Check our Discord for carpooling and tournament registration info.
+              </p>
+              <div class="text-xs bg-white p-3 rounded-lg border border-gray-200 space-y-1 font-medium">
+                <div>• Monthly Open Giant Round Robin Tournaments</div>
+                <div>• UT Table Tennis Intramural &amp; Club Qualifiers</div>
+              </div>
+            </div>
+
+            <div class="bg-gray-50 rounded-xl p-6 border border-gray-200">
+              <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center">
+                <span class="text-ut-orange mr-2">📅</span> Weekly Club Practice
+              </h3>
+              <p class="text-gray-600 mb-4 text-sm">
+                Practices are held weekly at <strong>RSC 2.112</strong>. Tables, balls, and loaner paddles are provided. All skill levels are welcome!
+              </p>
+              <div class="text-xs bg-white p-3 rounded-lg border border-gray-200 space-y-1 font-medium">
+                <div>• Tuesdays: 7:00 PM - 10:00 PM @ RSC 2.112</div>
+                <div>• Join Discord for weekly session announcements</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </div>
     </main>
 
